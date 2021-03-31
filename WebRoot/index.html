@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>网上书店项目实训</title>
+<script language="javascript" type="">
+	function RegsiterSubmit() {
+		with(document.Regsiter){
+			var user = loginName.value;
+			var pass = password.value;
+			var code = checkcode.value;
+			if(user == null|| user == " "){alert("请填写用户名");}
+				else if(pass == null|| pass == " "){alert("请填写密码");}
+				else if(code==null||code=="")alert("请填写验证码");
+				else submit();
+}
+}
+function reloadImage(t){t.src="./ImageServlet?flag="+Math.random();}
+</script>
+<style type="text/css">
+marquee {
+	color: blue;
+	font-family: 楷体;
+}
+</style>
+
+</head>
+<body>
+	<table align="center">
+		<tr>
+			<td align="center"><p>
+					<font color="red" size="5" style="font-family: simhei">请登录书店:</font>
+				<p>
+				<form method="post" name="Regsiter" action="checkUser.jsp"
+					target="_blank">
+					</p>
+					账号:<input type="text" name="loginName" size="25">
+					<p>
+						密码:<input type="password" name="password" size="25">
+					<p>
+						验证:<input type="text" name="checkcode" size="13"><img
+							alt="看不清，点这里!" src="./ImageServlet" onclick="reloadImage(this)">
+					<p>
+						<input type="button" value="提交" name="B1"
+							onclick="RegsiterSubmit()"> <input type="reset"
+							value="重置" name="B2">
+				</form></td>
+		</tr>
+		   <tr> 
+    
+      <td colspan="2" align="center">
+        <p>&nbsp;</p>
+        <p>如果你还不是本站用户，请在此<a href="register.jsp">注册</a></p>
+      </td>
+    </tr>
+	</table>
+</body>
+</html>

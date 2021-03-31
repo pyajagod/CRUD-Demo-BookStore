@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0 px; text - align : center;
+	background: # ffffff;
+}
+
+#container {
+	width: 800px;
+	height: 600px;
+	background: yellow;
+	margin: auto Opx;
+}
+
+#header {
+	float: left;
+	width: 800px;
+	height: 180px;
+	margin: auto Opx;
+	clear: both;
+	background: red;
+}
+
+.nav {
+	width: 800px;
+	height: 5px; line - height : 5px;
+	margin: auto 0px;
+	clear: both;
+	background: #ff;
+}
+
+.left_main {
+	margin: 0px;
+	float: left;
+	width: 180px;
+	height: 425px;
+	background: #66ddff;
+	clear: right;
+}
+
+.right_main {
+	margin: Opx;
+	float: right;
+	width: 620px;
+	height: 425px;
+	background: yellow;
+	clear: right;
+}

@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+marquee {
+	color: blue;
+	font-family: 楷体;
+}
+
+body {
+	align: center;
+	margin: 0 px;
+	text-align: center;
+	bcakground-size: cover;
+}
+
+#container {
+	width: 800px;
+	height: 600px;
+	background: pink;
+	margin: auto Opx;
+	text-align: center;
+}
+
+#header {
+	float: left;
+	width: 800px;
+	height: 180px;
+	margin: auto Opx;
+	clear: both;
+	background: red;
+}
+
+.nav {
+	width: 800px;
+	height: 5px;
+	line-height: 5px;
+	margin: auto 0px;
+	clear: both;
+	background: #ff;
+}
+
+.left1_main {
+	margin: 0px;
+	float: left;
+	width: 180px;
+	height: 425px;
+	background: pink;
+	clear: right;
+}
+
+.right1_main {
+	margin: Opx;
+	float: right;
+	width: 620px;
+	height: 425px;
+	background:pink;
+	clear: right;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-family: 楷体;
+}
+
+a:link {
+	color: #000000
+}
+
+a:visited {
+	color: #000000
+}
+
+a:active {
+	color: #000000
+}
+
+a:hover {
+	color: green;
+	font-family: 楷体;
+	font-size: 20
+}

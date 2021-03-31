@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>提交图书订单</title>
+<script language="javascript" type="">
+ function RegsiterSubmit(){
+	with(document.order){
+		var user= username.value;
+		var cart=address.value;
+ 	if(user==null||user==""){ alert("请填写用户名");}
+	else if (cart==null||cart==""){ alert("请填写地址"); }
+ 	else document.order.submit();
+}
+}
+</script>
+</head>
+<body>
+	<center>
+		<form method="POST" name="order" action="./DoOrder">
+			<table style="TEXT-ALIGN: center" cellSpacing=1 cellPadding=1
+				width=260 border=1>
+				<!-- 显示内容开始 -->
+				<tr>
+					<td colspan="2"><font size=4>订单处理 请输入如下信息：</font></td>
+				</tr>
+				<tr>
+					<td>用户名:</td>
+					<td><div align="left">
+							<input type="text" name="username" size="25" />
+						</div></td>
+				</tr>
+				<tr>
+					<td>姓名:</td>
+					<td><div align="left">
+							<input type="text" name="name" size="25" />
+						</div></td>
+				</tr>
+				<tr>
+					<td>电话:</td>
+					<td><div align="left">
+							<input type="text" name="phone" size="25" />
+						</div></td>
+				</tr>
+				<tr>
+					<td>地址:</td>
+					<td><div align="left">
+							<input type="text" name="address" size="25" />
+						</div></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="购买" name="B1"
+						onclick="RegsiterSubmit()" /></td>
+					<td align="center"><input type="reset" value="重置" name="B2" /></td>
+				</tr>
+				<!-- 显示内容结束 -->
+			</table>
+		</form>
+	</center>
+</body>
+</html>
